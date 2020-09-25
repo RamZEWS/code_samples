@@ -1,0 +1,23 @@
+.price-block {
+  border: 1px solid #FF00FF;
+
+  .old-price {
+    background-color: #00FF00;
+  }
+
+  .current-price {
+    font-size: 20px;
+    color: green;
+  }
+
+  .discount {
+    .percentage {
+      color: red;
+    }
+
+    .price {
+      color: red;
+      font-weight: bold;
+    }
+  }
+}

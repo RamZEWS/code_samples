@@ -1,0 +1,18 @@
+security:
+  oauth2:
+    client:
+      clientId: personnel
+      clientSecret: passwd1024
+      accessTokenUri: http://oauth-service:5000/uaa/oauth/token
+      grant-type: client_credentials
+      scope: server
+
+server:
+  context-path: /personnel
+  port: 6000
+spring:
+    datasource:
+        driverClassName: org.postgresql.Driver
+        password: allinse1024
+        url: jdbc:postgresql://82.146.60.158:5432/allinse_dev
+        username: allinse

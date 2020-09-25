@@ -1,0 +1,31 @@
+addToCart:
+  path: /api/add-to-cart/{productId}/
+  defaults:
+    _controller: 'Modules\Cart\Controller\AjaxController::addToCart'
+  methods: [POST]
+  requirements:
+    productId: '[1-9]\d*'
+
+removeFromCart:
+  path: /api/remove-from-cart/{productId}/
+  defaults:
+    _controller: 'Modules\Cart\Controller\AjaxController::removeProductFromCart'
+  methods: [DELETE]
+  requirements:
+    productId: '[1-9]\d*'
+
+plusProductToCart:
+  path: /api/plus-product-to-cart/{productId}/
+  defaults:
+    _controller: '\Modules\Cart\Controller\AjaxController::plusOne'
+  methods: [POST]
+  requirements:
+    productId: '[1-9]\d*'
+
+minusProductFromoCart:
+  path: /api/minus-product-from-cart/{productId}/
+  defaults:
+    _controller: '\Modules\Cart\Controller\AjaxController::minusOne'
+  methods: [POST]
+  requirements:
+    productId: '[1-9]\d*'

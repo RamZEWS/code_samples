@@ -1,0 +1,6 @@
+offsets:
+  x: 5
+  y: 5
+max_workers_count: 100000
+workers_delay: 10
+channel_capacity: 10000

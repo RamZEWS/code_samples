@@ -1,0 +1,5 @@
+.link-disabled,
+.link-disabled:hover {
+    color: #777777 !important;
+    cursor: default;
+}
